@@ -1,19 +1,21 @@
-<form [formGroup]="form">
+<section>
     <h2>Add product</h2>
-    <mat-form-field>
-        <mat-label>Product Name</mat-label>
-        <input matInput #input placeholder="Ex. Sugar" formControlName="name">
-    </mat-form-field>
-    <mat-form-field>
-        <mat-label>Detail</mat-label>
-        <textarea matInput formControlName="detail"></textarea>
-    </mat-form-field>
-    <mat-form-field floatLabel="always">
-        <mat-label>Price</mat-label>
-        <input matInput type="number" class="example-right-align" placeholder="0" formControlName="price">
-        <span matTextPrefix>$&nbsp;</span>
-        <span matTextSuffix>.00</span>
-    </mat-form-field>
-    <button mat-raised-button color="primary">Add</button>
-</form>
-
+    <form [formGroup]="form">
+        <div class="row">
+            <mat-form-field>
+                <mat-label>Product Name</mat-label>
+                <input matInput #input placeholder="Ex. Sugar" formControlName="name">
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Detail</mat-label>
+                <textarea matInput formControlName="detail"></textarea>
+            </mat-form-field>
+            <mat-form-field floatLabel="always">
+                <mat-label>Price</mat-label>
+                <input matInput type="number" class="example-right-align" placeholder="0" formControlName="price">
+                <span matTextPrefix>$&nbsp;</span>
+            </mat-form-field>
+            <button mat-fab extended color="primary">Add</button>
+        </div>
+    </form>
+</section>
